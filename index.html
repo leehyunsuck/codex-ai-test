@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D 인형뽑기 시뮬레이터</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="sim-canvas"></canvas>
+      <div id="hud">
+        <h1>🕹️ Crane Simulator</h1>
+        <div class="controls">
+          <button data-action="left">← Left (A/←)</button>
+          <button data-action="right">→ Right (D/→)</button>
+          <button data-action="forward">↑ Forward (W/↑)</button>
+          <button data-action="backward">↓ Backward (S/↓)</button>
+          <button data-action="drop" class="drop">Drop (Space)</button>
+        </div>
+        <div id="status"></div>
+      </div>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
+</html>
